@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #bbc6fa;
+    font-family: cursive;
+}
+.queoteBox{
+    background: #fff;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10pc 20px 0px rgba(0, 0, 0, 0.15);
+}
+.queoteBox h2{
+    font-size: 30px;
+    margin-bottom: 44px;
+    position: relative;
+}
+.queoteBox h2::after{
+  position: absolute;
+  content:  '';
+  width: 75px;
+  height: 3px;
+  border-radius: 3px;
+  background: black;
+  bottom: -10px;
+  left: 50%;
+  transform:translateX(-50%) ;
+}
+.queoteBox  blockquote {
+    font-size: 26px;
+    min-height: 110px;
+    
+}
+.queoteBox blockquote::before , .queoteBox blockquote::after{
+    content: '"';
+}
+.queoteBox span {
+    display: flex;
+    margin-top: 10px ;
+    float: right;
+    position: relative;
+}
+.queoteBox span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgba(23, 124, 229);
+position: absolute;
+top: 50%;
+left: -30px;
+}
+.queoteBox div {
+   width: 100% ;
+   margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.queoteBox button {
+     background:  rgb(23, 124, 229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin: 5px;
+     cursor: pointer;   
+     font-size: 20px; 
+     filter: grayscale();
+     transition: .5s ;
+     }
+   
+ .queoteBox  button:hover{
+ filter: grayscale(0);
+ width: 50px;
+ height: 50px;
+ font-size: 10px;
+ padding: 20px;
+ margin: 0;
+ }
+
+.queoteBox button:nth-child(2){
+    background: transparent;
+    color: #333;
+}
+
+ .queoteBox button img {
+   width: 40px;
+   border: #bbc6fa;
+    margin-right: 10px;
+    border-radius: 600px 600px;
+    background: transparent;
+ }
